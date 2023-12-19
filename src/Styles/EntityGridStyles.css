@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  
+  body{
+    color: #111;
+  }
+
+  .entity-container{
+    max-width: 1300px;
+    width: 100%;
+    margin: auto;
+    border: 2px solid transparent;
+    border-radius: 18px;
+    padding: 0px 20px;
+  }
+  
+  section{
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .entity-container h1{
+   font-size: 40px;
+   line-height: 60px;
+   text-align: left;
+   margin-bottom: 10px;
+  }
+  
+  .entitycards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+  }
+  
+  .entitycard{
+    flex: 0 0 calc(33.33% - 20px);
+    max-width: calc(33.33% - 20px);
+    width: 100%;
+    background: #fff;
+    border-radius: 18px;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: .3s;
+    border: 2px solid transparent;
+    border-color: orange;
+  }
+  
+  .entitycard:hover{
+    background-color: #FCD299;
+  }
+
+  p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+  .exbtn{
+    border: none;
+    outline: none;
+    background: gray;
+    color: #fff;
+    border-radius: 10px;
+    max-width: 80px;
+    width: 80%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    cursor: pointer;
+    transition: .3s;
+    border: 1px solid gray;
+  }
+  
+  .exbtn:hover{
+    background: transparent;
+    color: #1d39c4;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    
+    list-style: none;
+  }
+  
+  .page-item {
+    margin: 0 5px;
+    
+  }
+  
+ .page-link {
+    cursor: pointer;
+    border: 1px solid #ddd;
+    padding: 8px 12px;
+    color: blue;
+    text-decoration: none;
+    border-radius: 4px;
+  }
+  
+  .page-item.active .page-link {
+    background-color: orange; 
+    color: #fff; 
+    
+  }
+
+  .page-link:hover {
+    background-color: #f1f1f1;
+  }
+  
+
+  @media(max-width: 969px){
+    section{
+      padding: 20px 0px;
+      
+    }
+    h1{
+      font-size: 30px;
+      line-height: 40px;
+    }
+    .entitycard{
+      flex: 0 0 calc(50% - 20px);
+      max-width: calc(50% - 20px);
+    }
+  }
+  
+  @media(max-width: 600px){
+    
+    .entitycard{
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
